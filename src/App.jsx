@@ -6,6 +6,7 @@ import Header from './Components/Header'
 import ProductList from './Components/ProductList'
 import laEsquinaDelInfinito from './assets/laEsquinaDelInfinito.jpg'
 import detonadorDeSueños from './assets/detonadorDeSueños.jpg'
+import TotalCardStat from './Components/TotalCardStat'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -65,6 +66,9 @@ function App() {
   return (
     <>
       <Header/>
+
+      <TotalCardStat />
+
       <ProductList data={productos}/>
       
       <div>
