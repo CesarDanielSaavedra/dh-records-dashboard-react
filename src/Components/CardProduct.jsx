@@ -1,9 +1,9 @@
 import React from 'react';
 import './CardProduct.css'
 
-const CardProduct = (props) => {
+const CardProduct = ({data}) => {
 
-    const { titulo, autor, precio, imagen } = props.data;
+    const { titulo, autores, precio_venta, imagen } = data;
 
     return(
         <article className="tarjeta_producto">
@@ -13,9 +13,9 @@ const CardProduct = (props) => {
             <div className="tarjeta-producto__contenedor-info">
                 <div className="tarjeta-producto__contenedor-info--descripcion">
                     <p className="tarjeta-producto__titulo">{titulo}</p>
-                    <p className="tarjeta-producto__autor">{autor}</p>
+                    <p className="tarjeta-producto__autor">{autores.nombre}</p>
                 </div>
-                <h3 className="tarjeta-producto__precio">${precio}</h3>     
+                <h3 className="tarjeta-producto__precio">${precio_venta}</h3>     
             </div>
         </article>
     )

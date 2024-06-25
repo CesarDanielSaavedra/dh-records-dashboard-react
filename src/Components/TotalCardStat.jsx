@@ -3,7 +3,10 @@ import './TotalCardStat.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCompactDisc } from '@fortawesome/free-solid-svg-icons'
 
-const TotalCardStat = () => {
+const TotalCardStat = ({data}) => {
+
+    let total = data; 
+
     return(
         <article className='stat-card__contenedor-general'>
             <div className='stat-card__icono'>
@@ -11,7 +14,7 @@ const TotalCardStat = () => {
             </div>
             <div className='stat-card__contenedor-info'>
                 <h4>titulo general</h4>
-                <p>total: </p>
+                <p>total: {total}</p>
             </div>
         </article>
     )
