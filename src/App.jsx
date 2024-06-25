@@ -7,7 +7,9 @@ import Header from './Components/Header'
 import ProductList from './Components/ProductList'
 import laEsquinaDelInfinito from './assets/laEsquinaDelInfinito.jpg'
 import detonadorDeSueños from './assets/detonadorDeSueños.jpg'
+
 import TotalCardStat from './Components/TotalCardStat'
+import { faCompactDisc, faUsers, faMusic } from '@fortawesome/free-solid-svg-icons'
 
 import productsListAll from './apiData/productsListAll.json'
 
@@ -19,13 +21,17 @@ function App() {
   let productos = productsListAll.products;
 
   let totalProductos = productsListAll.total;
+  let totalUsuarios = 15;
+  let totalGeneros = 7;
 
   return (
     <>
       
       <Header/>
 
-      <TotalCardStat data={totalProductos}/>
+      <TotalCardStat title="Productos" icon={faCompactDisc} total={totalProductos} />
+      <TotalCardStat title="Usuarios" icon={faUsers} total={totalUsuarios} />
+      <TotalCardStat title="Generos" icon={faMusic} total={totalGeneros} />
 
       <ProductList data={productos}/>
       
