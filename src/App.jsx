@@ -6,38 +6,41 @@ import './App.css'
 const API_URL = 'http://localhost:3030/apis/products';
 
 import Header from './Components/Header'
-import ProductList from './Components/ProductList'
 
 import TotalCardStat from './Components/TotalCardStat'
 import { faCompactDisc, faUsers, faMusic } from '@fortawesome/free-solid-svg-icons'
+
+import ProductList from './Components/ProductList'
 
 
 function App() { 
 
   const [count, setCount] = useState(0)
 
-  const [productos, setProductos] = useState([]);
+  const [dataProductos, setdataProductos] = useState([]);
+  const [totalProductos, setTotalProductos] = useState(0);
+  const [totalGeneros, setTotalGeneros] = useState(0);
 
   const fetchData = async () => {
     try {
-      const response = await fetch(API_URL); // Realiza la solicitud HTTP GET a la API
+      const response = await fetch(API_URL); 
       if (!response.ok) { // Verifica si el estado HTTP indica éxito
         throw new Error(`HTTP error! status: ${response.status}`); // Lanza un error con el estado HTTP
       }
-      const data = await response.json(); // Convierte la respuesta a formato JSON
+      const data = await response.json(); 
       setCount((count) => count + 1);
-      setProductos(data); // Establece los datos de los productos en el estado
+      setdataProductos(data); 
+      setTotalProductos(data.total);
+      setTotalGeneros(data.productsByGenre.length);
     } catch (error) {
-      console.error('Error:', error); // Maneja el error de red o HTTP
-      // Aquí podrías manejar errores, como mostrar un mensaje al usuario
+      console.error('Error: ', error);
     }
   };
 
-  console.log(productos);
+  console.log(dataProductos.products);
 
-  let totalProductos = productos.total;
+  
   let totalUsuarios = 15;
-  let totalGeneros = 7;
 
   return (
     <>
@@ -52,9 +55,10 @@ function App() {
       <TotalCardStat title="Productos" icon={faCompactDisc} total={totalProductos} />
       <TotalCardStat title="Usuarios" icon={faUsers} total={totalUsuarios} />
       <TotalCardStat title="Generos" icon={faMusic} total={totalGeneros} />
-
-      <ProductList data={productos}/>
       
+      <ProductList productos={dataProductos.products} /> 
+
+
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
