@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Fondo gris claro -->
+  <circle cx="100" cy="100" r="100" fill="#D3D3D3" />
+
+  <!-- Círculo principal del vinilo (dividido en dos líneas) -->
+  <circle cx="100" cy="100" r="90" stroke="black" stroke-width="5" fill="none" />
+  <circle cx="100" cy="100" r="85" stroke="#FF00FF" stroke-width="10" fill="none" />
+  
+  <!-- Surcos del vinilo en negro -->
+  <circle cx="100" cy="100" r="75" stroke="black" stroke-width="1" fill="none" />
+  <circle cx="100" cy="100" r="65" stroke="black" stroke-width="1" fill="none" />
+  <circle cx="100" cy="100" r="55" stroke="black" stroke-width="1" fill="none" />
+  
+  <!-- Centro del vinilo en negro -->
+  <circle cx="100" cy="100" r="35" fill="black" />
+  
+  <!-- Centro del vinilo en negro -->
+  <circle cx="100" cy="100" r="20" fill="black" />
+  
+  <!-- Texto en el centro -->
+  <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="15" dy=".3em">DR-R</text>
+</svg>
