@@ -52,9 +52,9 @@ function App() {
         </button>
       </div>
 
-      <TotalCardStat title="Productos" icon={faCompactDisc} total={totalProductos} />
-      <TotalCardStat title="Usuarios" icon={faUsers} total={totalUsuarios} />
-      <TotalCardStat title="Generos" icon={faMusic} total={totalGeneros} />
+      <TotalCardStat title="Productos" icon={faCompactDisc} />
+      {/* <TotalCardStat title="Usuarios" icon={faUsers} total={totalUsuarios} /> */}
+      {/* <TotalCardStat title="Generos" icon={faMusic} total={totalGeneros} /> */}
       
       <ProductList productos={dataProductos.products} /> 
 
