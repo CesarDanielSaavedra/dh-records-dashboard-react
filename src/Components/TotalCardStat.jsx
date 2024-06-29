@@ -3,30 +3,38 @@ import { useState, useEffect } from 'react';
 import './TotalCardStat.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const API_URL = 'http://localhost:3030/apis/products';
 
-const TotalCardStat = ({title, icon}) => {
+const TotalCardStat = ({title, icon, api}) => {
 
-    const [totalProductos, setTotalProductos] = useState(0);
+    const [total, setTotal] = useState(0);
 
   
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await fetch(API_URL); // Realiza la solicitud HTTP GET a la API
+            const response = await fetch(api);
             if (!response.ok) { // Verifica si el estado HTTP indica éxito
               throw new Error(`HTTP error! status: ${response.status}`); // Lanza un error con el estado HTTP
             }
-            const data = await response.json(); // Convierte la respuesta a formato JSON
-            setTotalProductos(data.total);
+            const data = await response.json();
+            switch (title) {
+              case 'Products':
+              case 'Users':
+                  setTotal(data.total);
+                  break;
+              case 'Genres':
+                  setTotal(data.productsByGenre.length);
+                  break;
+              default:
+                  setTotal(0);
+          }
           } catch (error) {
-            console.error('Error:', error); // Maneja el error de red o HTTP
-            // Aquí podrías manejar errores, como mostrar un mensaje al usuario
+            console.error('Error:', error);
           }
         };
     
         fetchData();
-      }, []); // El array vacío asegura que useEffect solo se ejecute una vez, similar a componentDidMount
+      }, []); // El array vacío asegura que useEffect solo se ejecute una vez
       
 
     return(
@@ -36,7 +44,7 @@ const TotalCardStat = ({title, icon}) => {
             </div>
             <div className='stat-card__contenedor-info'>
                 <h4>{title}</h4>
-                <p>total: {totalProductos}</p>
+                <p>total: {total}</p>
             </div>
         </article>
     )

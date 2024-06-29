@@ -1,62 +1,28 @@
-import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+
 import './App.css'
-
-const API_URL = 'http://localhost:3030/apis/products';
-
 import Header from './Components/Header'
 
 import TotalCardStat from './Components/TotalCardStat'
 import { faCompactDisc, faUsers, faMusic } from '@fortawesome/free-solid-svg-icons'
+
+const PRODUCTS_API_URL = 'http://localhost:3030/apis/products';
 
 import ProductList from './Components/ProductList'
 
 
 function App() { 
 
-  const [count, setCount] = useState(0)
-
-  const [dataProductos, setdataProductos] = useState([]);
-  const [totalProductos, setTotalProductos] = useState(0);
-  const [totalGeneros, setTotalGeneros] = useState(0);
-
-  const fetchData = async () => {
-    try {
-      const response = await fetch(API_URL); 
-      if (!response.ok) { // Verifica si el estado HTTP indica éxito
-        throw new Error(`HTTP error! status: ${response.status}`); // Lanza un error con el estado HTTP
-      }
-      const data = await response.json(); 
-      setCount((count) => count + 1);
-      setdataProductos(data); 
-      setTotalProductos(data.total);
-      setTotalGeneros(data.productsByGenre.length);
-    } catch (error) {
-      console.error('Error: ', error);
-    }
-  };
-
-  console.log(dataProductos.products);
-
-  
-  let totalUsuarios = 15;
-
   return (
     <>
       <Header/>
 
-      <div className="card">
-        <button onClick={fetchData}>
-          Cargar métricas {count}
-        </button>
-      </div>
-
-      <TotalCardStat title="Productos" icon={faCompactDisc} />
+      <TotalCardStat title="Products" icon={faCompactDisc} api={PRODUCTS_API_URL} />
       {/* <TotalCardStat title="Usuarios" icon={faUsers} total={totalUsuarios} /> */}
-      {/* <TotalCardStat title="Generos" icon={faMusic} total={totalGeneros} /> */}
+      <TotalCardStat title="Genres" icon={faMusic} api={PRODUCTS_API_URL} />
       
-      <ProductList productos={dataProductos.products} /> 
+      <ProductList /> 
 
 
       <div>
