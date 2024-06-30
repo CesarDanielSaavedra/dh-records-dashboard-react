@@ -1,0 +1,30 @@
+{
+    "status": "exito",
+    "product": {
+      "id": 2,
+      "titulo": "Thriller",
+      "genero_id": 1,
+      "descripcion": "Thriller es el sexto álbum de estudio del cantante estadounidense Michael Jackson, lanzado en 1982. Es el álbum más vendido de todos los tiempos.",
+      "autor_id": 2,
+      "precio_costo": "1250",
+      "precio_venta": "2499",
+      "release_date": "1982-01-01T00:00:00.000Z",
+      "estilo": "pop",
+      "generos": {
+        "id": 1,
+        "nombre": "pop"
+      },
+      "autores": {
+        "id": 2,
+        "nombre": "Michael Jackson"
+      },
+      "imagenesProductos": [
+        {
+          "id": 2,
+          "nombre": "imagen-1712231723306.png",
+          "tipo": "png",
+          "producto_id": 2
+        }
+      ]
+    }
+  }

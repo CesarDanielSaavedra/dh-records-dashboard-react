@@ -7,7 +7,7 @@ import Header from './Components/Header';
 import HomeBody from './Pages/HomeBody';
 import Footer from './Components/Footer';
 import ProductList from './Pages/ProductList';
-import GenresList from './Pages/GneresList';
+import GenresList from './Pages/GenresList';
 import NotFound from './Pages/NotFound';
 import ProductDetail from './Pages/ProductDetail';
 

@@ -35,7 +35,7 @@ const ProductList = () => {
     console.log(productos);
 
     return(
-        <section className="producto__contenedor-general">
+        <section className="Lista-producto__contenedor-general">
             {productos.map((producto) => (
                 <Link to={`/product/${producto.id}`}  key={producto.id}>
                   <CardProduct data={producto}/>
