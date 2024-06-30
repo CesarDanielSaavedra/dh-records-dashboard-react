@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import CardProduct from './CardProduct';
+import CardProduct from '../Components/CardProduct';
 import './ProductList.css';
+import { Link } from 'react-router-dom';
 
 const API_URL = 'http://localhost:3030/apis/products';
 
@@ -31,11 +32,15 @@ const ProductList = () => {
         return <p>No hay productos disponibles.</p>;
     }
 
+    console.log(productos);
+
     return(
         <section className="producto__contenedor-general">
-            {productos.map((producto) => {
-                return <CardProduct key={producto.id} data={producto}/>
-            })}
+            {productos.map((producto) => (
+                <Link to={`/product/${producto.id}`}  key={producto.id}>
+                  <CardProduct data={producto}/>
+                </Link>
+            ))}
         </section>
     )
 }

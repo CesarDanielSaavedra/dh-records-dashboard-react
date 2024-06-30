@@ -1,6 +1,6 @@
 import React from 'react';
 
-import TotalCardStat from './TotalCardStat';
+import TotalCardStat from '../Components/TotalCardStat';
 import { faCompactDisc, faUsers, faMusic } from '@fortawesome/free-solid-svg-icons';
 
 const PRODUCTS_API_URL = 'http://localhost:3030/apis/products';
@@ -15,7 +15,7 @@ const HomeBody = () => {
         {/* <TotalCardStat title="Usuarios" icon={faUsers} total={totalUsuarios} /> */}
             <TotalCardStat title="Genres" icon={faMusic} api={PRODUCTS_API_URL} />
       
-            <ProductList /> 
+            {/* <ProductList />  */}
         </div>
     );
 }

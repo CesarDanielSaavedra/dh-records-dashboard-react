@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import './TotalCardStat.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
 
 const TotalCardStat = ({title, icon, api}) => {
@@ -36,17 +37,20 @@ const TotalCardStat = ({title, icon, api}) => {
         fetchData();
       }, []); // El array vacío asegura que useEffect solo se ejecute una vez
       
+      const link = title.toLowerCase();
 
     return(
-        <article className='stat-card__contenedor-general'>
-            <div className='stat-card__icono'>
-            <FontAwesomeIcon icon={icon} size="2xl" />
-            </div>
-            <div className='stat-card__contenedor-info'>
-                <h4>{title}</h4>
-                <p>total: {total}</p>
-            </div>
-        </article>
+        <Link to={`/${link}`}>
+          <article className='stat-card__contenedor-general'>
+              <div className='stat-card__icono'>
+              <FontAwesomeIcon icon={icon} size="2xl" />
+              </div>
+              <div className='stat-card__contenedor-info'>
+                  <h4>{title}</h4>
+                  <p>total: {total}</p>
+              </div>
+          </article>
+        </Link>
     )
 }
 
