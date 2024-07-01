@@ -13,3 +13,7 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
+.home__contenedor-titulo{
+    padding-bottom: 40px;
+}

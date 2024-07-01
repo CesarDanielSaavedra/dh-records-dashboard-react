@@ -12,7 +12,7 @@ const HomeBody = () => {
 
     return (
         <div className='home__contenedor-general'>
-            <h3>Bienvenidos a las metricas generales de DH-records!</h3>
+            <h3 className='home__contenedor-titulo'>Bienvenidos a las metricas generales de DH-records!</h3>
 
             <TotalCardStat title="Products" icon={faCompactDisc} api={PRODUCTS_API_URL} />
         {/* <TotalCardStat title="Usuarios" icon={faUsers} total={totalUsuarios} /> */}
