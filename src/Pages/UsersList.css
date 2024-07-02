@@ -1,0 +1,16 @@
+
+
+.Lista-usuario__contenedor-general{
+    max-width: 750px;
+    max-height: 750px;
+    overflow: scroll;
+    margin: 10px 16px;
+    padding: 16px;
+    background-color: var(--GRIS-CLARO); 
+    border-radius: 6px;
+    box-shadow: 0 0 5px var(--VIOLETA-SOMBRA);    
+    display: flex; 
+    justify-content: space-around; 
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
