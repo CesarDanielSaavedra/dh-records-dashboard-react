@@ -35,10 +35,10 @@ const UsersList = () => {
 
         return(
             <section className='Lista-usuario__contenedor-general'>
-                {users.map((users) => (
-                        <Link to={`/users/${users.id}`} key={users.id}>   
-                        <CardUsers data={users}/>
-                    </Link>                                                      //link = crea enlaces navegables sin recargar la página.
+                {users.map((user) => (
+                    <Link to={`/users/${user.id}`} key={user.id}>   
+                        <CardUsers data={user}/>
+                    </Link>                                                  //link = crea enlaces navegables sin recargar la página.
                 ))}  
                 </section>
 

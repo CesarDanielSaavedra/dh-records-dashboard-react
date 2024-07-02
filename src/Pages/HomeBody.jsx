@@ -17,7 +17,7 @@ const HomeBody = () => {
             <h3 className='home__contenedor-titulo'>Bienvenidos a las metricas generales de DH-records!</h3>
 
             <TotalCardStat title="Products" icon={faCompactDisc} api={PRODUCTS_API_URL} />
-             <TotalCardStat title="Users" icon={faUsers} total={USERS_API_URL} /> 
+             <TotalCardStat title="Users" icon={faUsers} api={USERS_API_URL} /> 
             <TotalCardStat title="Genres" icon={faMusic} api={PRODUCTS_API_URL} />
       
             {/* <ProductList />  */}
