@@ -86,7 +86,7 @@
 .tarjeta-usuario__autor {
     margin: 0px;
     color: var(--GRIS-OSCURO);
-    font-size: 8px;
+    font-size: 11px;
 }
 
 .tarjeta-usuario__precio {

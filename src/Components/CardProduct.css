@@ -86,8 +86,7 @@
 .tarjeta-producto__autor {
     margin: 0px;
     color: var(--GRIS-OSCURO);
-    font-size: 8px;
-    display: inline-block;
+    font-size: 12px;
 }
 
 .tarjeta-producto__precio {
