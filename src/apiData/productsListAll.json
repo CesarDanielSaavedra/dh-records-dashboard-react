@@ -1,0 +1,293 @@
+{
+    "status": "exito",
+    "total": 10,
+    "productsByGenre": [
+      {
+        "productos_por_genero": 3,
+        "generos": {
+          "id": 1,
+          "nombre": "pop"
+        }
+      },
+      {
+        "productos_por_genero": 7,
+        "generos": {
+          "id": 2,
+          "nombre": "rock"
+        }
+      }
+    ],
+    "products": [
+      {
+        "id": 1,
+        "titulo": "Abbey Road",
+        "genero_id": 1,
+        "descripcion": "Abbey Road es el undécimo álbum de estudio de la banda británica de rock The Beatles. Fue lanzado en 1969 y es uno de los álbumes más icónicos de la historia de la música.",
+        "autor_id": 1,
+        "precio_costo": "1599",
+        "precio_venta": "2999",
+        "release_date": "1969-01-01T00:00:00.000Z",
+        "estilo": "rock,pop",
+        "generos": {
+          "id": 1,
+          "nombre": "pop"
+        },
+        "autores": {
+          "id": 1,
+          "nombre": "The Beatles"
+        },
+        "imagenesProductos": [
+          {
+            "id": 1,
+            "nombre": "imagen-1712231620361.jpg",
+            "tipo": "jpg",
+            "producto_id": 1
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "titulo": "Thriller",
+        "genero_id": 1,
+        "descripcion": "Thriller es el sexto álbum de estudio del cantante estadounidense Michael Jackson, lanzado en 1982. Es el álbum más vendido de todos los tiempos.",
+        "autor_id": 2,
+        "precio_costo": "1250",
+        "precio_venta": "2499",
+        "release_date": "1982-01-01T00:00:00.000Z",
+        "estilo": "pop",
+        "generos": {
+          "id": 1,
+          "nombre": "pop"
+        },
+        "autores": {
+          "id": 2,
+          "nombre": "Michael Jackson"
+        },
+        "imagenesProductos": [
+          {
+            "id": 2,
+            "nombre": "imagen-1712231723306.png",
+            "tipo": "png",
+            "producto_id": 2
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "titulo": "The Dark Side of the Moon",
+        "genero_id": 2,
+        "descripcion": "The Dark Side of the Moon es el octavo álbum de estudio de la banda británica de rock Pink Floyd, lanzado en 1973. Es uno de los álbumes más influyentes en la historia del rock.",
+        "autor_id": 3,
+        "precio_costo": "1875",
+        "precio_venta": "3499",
+        "release_date": "1973-01-01T00:00:00.000Z",
+        "estilo": "rock",
+        "generos": {
+          "id": 2,
+          "nombre": "rock"
+        },
+        "autores": {
+          "id": 3,
+          "nombre": "Pink Floyd"
+        },
+        "imagenesProductos": [
+          {
+            "id": 3,
+            "nombre": "imagen-1712231816033.png",
+            "tipo": "png",
+            "producto_id": 3
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "titulo": "Hotel California",
+        "genero_id": 2,
+        "descripcion": "Hotel California es el quinto álbum de estudio de la banda de rock Eagles, lanzado en 1976. Es uno de los álbumes más vendidos de todos los tiempos y contiene el icónico sencillo homónimo",
+        "autor_id": 4,
+        "precio_costo": "1425",
+        "precio_venta": "2799",
+        "release_date": "1976-01-01T00:00:00.000Z",
+        "estilo": "rock",
+        "generos": {
+          "id": 2,
+          "nombre": "rock"
+        },
+        "autores": {
+          "id": 4,
+          "nombre": "Eagles"
+        },
+        "imagenesProductos": [
+          {
+            "id": 4,
+            "nombre": "imagen-1712231885555.jpg",
+            "tipo": "jpg",
+            "producto_id": 4
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "titulo": "Back in Black",
+        "genero_id": 2,
+        "descripcion": "Back in Black es el séptimo álbum de estudio de la banda de rock AC/DC, lanzado en 1980. Es uno de los álbumes más vendidos de la historia y es conocido por su energía y fuerza.",
+        "autor_id": 5,
+        "precio_costo": "1350",
+        "precio_venta": "2699",
+        "release_date": "1980-01-01T00:00:00.000Z",
+        "estilo": "rock",
+        "generos": {
+          "id": 2,
+          "nombre": "rock"
+        },
+        "autores": {
+          "id": 5,
+          "nombre": "AC/DC"
+        },
+        "imagenesProductos": [
+          {
+            "id": 5,
+            "nombre": "imagen-1712231969140.jpg",
+            "tipo": "jpg",
+            "producto_id": 5
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "titulo": "Nevermind",
+        "genero_id": 2,
+        "descripcion": "Nevermind es el segundo álbum de estudio de la banda estadounidense Nirvana, lanzado en 1991. Es considerado uno de los álbumes más influyentes de la década de 1990 y ayudó a popularizar el género grunge.",
+        "autor_id": 6,
+        "precio_costo": "1600",
+        "precio_venta": "3099",
+        "release_date": "1991-01-01T00:00:00.000Z",
+        "estilo": "rock",
+        "generos": {
+          "id": 2,
+          "nombre": "rock"
+        },
+        "autores": {
+          "id": 6,
+          "nombre": "Nirvana"
+        },
+        "imagenesProductos": [
+          {
+            "id": 6,
+            "nombre": "imagen-1712232037398.jpg",
+            "tipo": "jpg",
+            "producto_id": 6
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "titulo": "Rumours",
+        "genero_id": 2,
+        "descripcion": "Rumours es el undécimo álbum de estudio de la banda británico-estadounidense Fleetwood Mac, lanzado en 1977. Es uno de los álbumes más exitosos de la historia y contiene varios sencillos populares.",
+        "autor_id": 7,
+        "precio_costo": "1475",
+        "precio_venta": "2899",
+        "release_date": "1977-01-01T00:00:00.000Z",
+        "estilo": "rock",
+        "generos": {
+          "id": 2,
+          "nombre": "rock"
+        },
+        "autores": {
+          "id": 7,
+          "nombre": "Fleetwood Mac"
+        },
+        "imagenesProductos": [
+          {
+            "id": 7,
+            "nombre": "imagen-1712232099852.png",
+            "tipo": "png",
+            "producto_id": 7
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "titulo": "Sgt. Pepper Lonely Hearts Club Band",
+        "genero_id": 1,
+        "descripcion": "Sgt. Pepper Lonely Hearts Club Band es el octavo álbum de estudio de The Beatles, lanzado en 1967. Es considerado uno de los álbumes más influyentes de todos los tiempos y ayudó a definir el género del rock psicodélico.",
+        "autor_id": 1,
+        "precio_costo": "1650",
+        "precio_venta": "3199",
+        "release_date": "1967-01-01T00:00:00.000Z",
+        "estilo": "rock",
+        "generos": {
+          "id": 1,
+          "nombre": "pop"
+        },
+        "autores": {
+          "id": 1,
+          "nombre": "The Beatles"
+        },
+        "imagenesProductos": [
+          {
+            "id": 8,
+            "nombre": "imagen-1712232176060.jpg",
+            "tipo": "jpg",
+            "producto_id": 8
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "titulo": "Led Zeppelin IV",
+        "genero_id": 2,
+        "descripcion": "Led Zeppelin IV es el cuarto álbum de estudio de la banda británica de rock Led Zeppelin, lanzado en 1971. Es uno de los álbumes más vendidos de la historia y contiene clásicos como Stairway to Heaven.",
+        "autor_id": 8,
+        "precio_costo": "1725",
+        "precio_venta": "3299",
+        "release_date": "1971-01-01T00:00:00.000Z",
+        "estilo": "rock",
+        "generos": {
+          "id": 2,
+          "nombre": "rock"
+        },
+        "autores": {
+          "id": 8,
+          "nombre": "Led Zeppelin"
+        },
+        "imagenesProductos": [
+          {
+            "id": 9,
+            "nombre": "imagen-1712232233566.jpg",
+            "tipo": "jpg",
+            "producto_id": 9
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "titulo": "The Wall",
+        "genero_id": 2,
+        "descripcion": "The Wall es el undécimo álbum de estudio de la banda británica de rock Pink Floyd, lanzado en 1979. Es un álbum conceptual que trata sobre temas como el aislamiento y la alienación.",
+        "autor_id": 3,
+        "precio_costo": "1900",
+        "precio_venta": "3599",
+        "release_date": "1979-01-01T00:00:00.000Z",
+        "estilo": "rock",
+        "generos": {
+          "id": 2,
+          "nombre": "rock"
+        },
+        "autores": {
+          "id": 3,
+          "nombre": "Pink Floyd"
+        },
+        "imagenesProductos": [
+          {
+            "id": 10,
+            "nombre": "imagen-1712232293259.png",
+            "tipo": "png",
+            "producto_id": 10
+          }
+        ]
+      }
+    ]
+  }
+  

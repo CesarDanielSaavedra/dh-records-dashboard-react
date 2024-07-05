@@ -1,0 +1,14 @@
+.genres__contenedor-general{
+    max-width: 750px;
+    min-height: 500px;
+    max-height: 750px;
+    margin: 10px 16px;
+    padding: 16px;
+    background-color: var(--GRIS-CLARO); 
+    border-radius: 6px;
+    box-shadow: 0 0 5px var(--VIOLETA-SOMBRA);    
+    display: flex; 
+    justify-content: space-around; 
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
